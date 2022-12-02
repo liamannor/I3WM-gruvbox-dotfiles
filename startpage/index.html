@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>startpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+        <center><p><span id="time"></span>  <span id="date"></span></p></center> 
+
+    <center><form id="form" role="search">
+      <input
+        type="search"
+        id="query"
+        name="q"
+        placeholder="Search DuckDuckGo..."
+      />
+    </form></center>
+ 
+    <script>
+      const f = document.getElementById("form");
+      const q = document.getElementById("query");
+      const search = "https://duckduckgo.com/?t=ffab&q=";
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = search + q.value + "&ia=web";
+        window.open(url, "_self");
+      }
+
+     f.addEventListener("submit", submitted);
+      var date = new Date();
+      document.getElementById("time").innerHTML = date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false});
+      document.getElementById("date").innerHTML = date.toLocaleString([], {day: '2-digit', month: '2-digit'});
+    </script>
+  </body>
+</html>

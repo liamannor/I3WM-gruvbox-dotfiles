@@ -1,0 +1,58 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');*/
+html {
+  color: #00;
+  font: 18px "NovaMono", monospace;
+  height: 100%;
+  color: #d4b398;
+}
+.adjust{
+  font-size-adjust: 0.75;
+}
+
+body {
+  background-color: #282828;
+  padding: 5%;
+}
+/*D8DEE9*/
+a {
+  color: #d4be98
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  font-weight: bold;
+}
+
+input {
+  background-color: unset;
+  font: 16px "NovaMono", monospace;
+  color: #d4be98;
+  height: 100%;
+  width: 95%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: solid;
+  border-bottom-color: #464443;;
+  
+  text-align: center;
+}
+input:focus {
+  outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+ul, form, p {
+  list-style-type: none;
+  padding: 0;
+  box-shadow: 0px 0px 0px #32302f;
+  border-radius: 20px;
+  width: 75%;
+  padding: 20px;
+}
